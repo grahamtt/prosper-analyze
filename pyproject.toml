@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "prosper-analyse"
+version = "0.1.0"
+description = ""
+authors = ["Graham Tibbitts <graham.tibbitts@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+autogluon = "^1.1.1"
+dask = "^2025.2.0"
+prosper-api = {version = "^0.11.2", extras = ["secure"]}
+toml = "^0.10.2"
+
+[tool.poetry.group.dev.dependencies]
+cython = ">=3.0.10"
+
+[build-system]
+requires = ["poetry-core", "swag"]
+build-backend = "poetry.core.masonry.api"
+
